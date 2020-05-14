@@ -1,0 +1,124 @@
+<div className="Login">
+            <div className="login-body">
+                <div className="Container">
+                    <h3 className="login-title">Login</h3>
+                    <form onSubmit={this.handleSubmit}>
+                        <div className="form-group">          
+                            <AiOutlineUser
+                                className="login-userIcon"
+                            />         
+                            <input 
+                                type="text" 
+                                id="user" 
+                                className="form-control" 
+                                placeholder="Username"
+                                onChange={this.handleInput}
+                            />
+                        </div>
+                        <div className="form-group">
+                            <label htmlFor="pass">Password</label>
+                            <input 
+                                type="password" 
+                                className="form-control" 
+                                id="pass"
+                                placeholder="************"
+                                onChange={this.handleInput}
+                            />
+                        </div>
+                        <Link to="/register" className="register-link">
+                            You don't have an account? Sign Up
+                        </Link>
+                        <button 
+                            type="submit" 
+                            className="btn"
+                        >
+                            Login
+                            <FiLogIn />
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+/* ------------------------LOGIN PAGE------------------------ */
+
+/* .Login{
+  background: #360033;  
+background: -webkit-linear-gradient(to bottom, #0b8793, #360033);  
+background: linear-gradient(to bottom, #0b8793, #360033); 
+
+
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+} */
+/* 
+.login-body .Container {
+  width: 31%;
+  background-color: white;
+  border-radius: 2rem;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.login-body .login-title {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+
+.login-body form {
+  padding: 40px;
+}
+
+.login-body .form-group {
+  width: 58%;
+  margin-left: 20%;
+
+}
+
+.register-link {
+  margin-left: 20%;
+  font-size: 0.92rem;
+  color: #12D4FF;
+}
+
+.register-link:hover {
+  color: #12D4FF;
+}
+
+.login-body .btn {
+  margin-top: 1.5rem;
+  margin-left: 34%;
+  width: 32%;
+  background-color: #FD5286;
+  color: white;
+  font-weight: 600;
+}
+
+.login-userIcon {
+  height: 38px;
+  width: 2rem;
+  border: 1px solid #ced4da;
+  border-radius: .25rem 0rem 0rem .25rem;
+}
+
+input#user.form-control {
+  background-color: #C5C3C3;
+  color: #2e5a69;
+  width: 80%;
+  display: initial;
+  border-radius: 0rem .25rem .25rem 0rem; 
+}
+
+input#pass.form-control {
+  background-color: #C5C3C3;
+  color: #2e5a69;
+} */
