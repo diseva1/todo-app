@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 
+import Form from 'react-bootstrap/Form';
+import Card from 'react-bootstrap/Card';
+
 class AddForm extends Component {
     constructor() {
         super();
@@ -41,47 +44,52 @@ class AddForm extends Component {
 
     render () {
      return(
-        <div className="card" id="addTaskCard" >
-         <div className="card-header">
-            <h1>Add Task</h1>
-         </div>
-         <form className="card-body" onSubmit={this.handleSubmit}>
-            <div className="form-group">
-                <input 
-                    type="text"
-                    name="title"
-                    onChange={this.handleInput}
-                    className="form-control"
-                    placeholder="Title" 
-                />
-            </div>
-            <div className="form-group">
-            <input 
-                type="text"
-                name="description"
-                onChange={this.handleInput}
-                className="form-control"
-                placeholder="Description" 
-                />
-            </div>
-            <div className="form-group">
-            <select 
-                name="priority"
-                onChange={this.handleInput}
-                className="form-control"
-                >
-                    <option>low</option>
-                    <option>medium</option>
-                    <option>high</option>
-                </select>
-            </div>
-            <input 
+        
+        <Card 
+            bg="light"
+            style={{ width: '24rem' }}
+        >
+            <Card.Header as="h1">Add Task</Card.Header>
+            <Card.Body>
+                <Form onSubmit={this.handleSubmit}>
+                    <Form.Group>
+                        <input 
+                            type="text"
+                            name="title"
+                            onChange={this.handleInput}
+                            className="form-control"
+                            placeholder="Title" 
+                        />
+                    </Form.Group>
+                    <Form.Group>
+                        <input 
+                            type="text"
+                            name="description"
+                            onChange={this.handleInput}
+                            className="form-control"
+                            placeholder="Description" 
+                        />
+                    </Form.Group>
+                    <Form.Group>
+                    <select 
+                        name="priority"
+                        onChange={this.handleInput}
+                        className="form-control"
+                    >
+                        <option>low</option>
+                        <option>medium</option>
+                        <option>high</option>
+                    </select>
+                    </Form.Group>
+                    <input 
                 type="submit" 
                 className="btn btn-info mb-3" 
                 value="Save"
             />
-         </form>
-        </div>
+                </Form>
+            </Card.Body>
+        </Card>
+        
      )
     }
 }

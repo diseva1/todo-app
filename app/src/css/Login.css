@@ -70,7 +70,7 @@ body, input, button {
   border-radius: 0px;
   padding: 10px;
   font-size: 1.6em;
-  width: 100%;
+  width: 78%;
   background: transparent;
   color: #c2b8b1;
 }
@@ -125,11 +125,19 @@ a:hover{
   color: #12D4FF;
 }
 
+#eye-button {
+  background: transparent;
+  width: 0;
+}
+
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
   .login {
     width: 600px;
     font-size: 2em;
+  }
+  html {
+    background-attachment: fixed;
   }
 }
 @media only screen and (max-width: 1100px) {
@@ -137,6 +145,9 @@ a:hover{
     margin-top: 2%;
     width: 600px;
     font-size: 1.7em;
+  }
+  html {
+    background-attachment: fixed;
   }
 }
 /* Medium Devices, Desktops */
@@ -147,6 +158,9 @@ a:hover{
     font-size: 1.7em;
     min-height: 0;
   }
+  html {
+    background-attachment: fixed;
+  }
 }
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
@@ -155,6 +169,9 @@ a:hover{
     width: 500px;
     font-size: 1.3em;
     min-height: 0;
+  }
+  html {
+    background-attachment: fixed;
   }
 }
 /* Extra Small Devices, Phones */
@@ -168,6 +185,9 @@ a:hover{
   .login h2 {
     margin-top: 0;
   }
+  html {
+    background-attachment: fixed;
+  }
 }
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {
@@ -176,5 +196,8 @@ a:hover{
     width: 200px;
     font-size: 0.7em;
     min-height: 0;
+  }
+  html {
+    background-attachment: fixed;
   }
 }

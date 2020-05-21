@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import '../../App.css';
+import '../../css/Tasks.css'
 import {Redirect} from 'react-router-dom';
 
 import Navigation from '../../components/Navigation';

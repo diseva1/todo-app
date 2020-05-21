@@ -1,0 +1,48 @@
+.Container {
+    width: 98%;
+  }
+  
+  #addTask {
+    margin-top: 8rem !important;
+    margin-left: 5rem !important;
+  }
+  
+  .card-columns{
+    width: 75% !important;
+  }
+  
+   #taskCards {
+    width: 20%;
+    margin-top: 6rem !important;
+    margin-left: 3.6rem;
+    float: left;
+  }  
+  
+  @media (max-width: 600px){
+    #taskCards {
+      float: none;
+      margin-left: auto;
+      margin-right: auto;
+      min-width: 17rem;
+      width: 60%;
+    }
+  
+    .col-2 {
+      min-width: 17rem;
+    }
+  
+    #addTaskCard {
+      width: 76%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    #addTask {
+      min-width: 86%;
+      margin-left: auto !important;
+      margin-right: auto;
+    }
+  
+    .Container {
+      width: 94%;
+    }
+  }
