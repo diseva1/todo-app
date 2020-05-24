@@ -1,0 +1,10 @@
+version: '3'
+services:
+  todo-api:
+    image: node:12.16
+    build: .
+    command: nodemon /src/index.js
+    volumes:
+      - './src/:/src/app/'
+    ports:
+      - 4000:4000

@@ -1,10 +1,8 @@
 FROM node:12.16
-WORKDIR /app
-COPY . .
-ENV PORT=4000
+WORKDIR /src
 RUN npm install
-EXPOSE $PORT
-ENTRYPOINT [ "npm", "test" ]
+ADD ./src/ /src/
+CMD [ "node", "/src/index.js" ]
 
 
 

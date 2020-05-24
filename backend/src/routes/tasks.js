@@ -14,6 +14,9 @@ router.get('/', verify, async (req, res) => {
 		user: req.user,
 	});
 });
+router.get('/test', (req, res) => {
+	res.send('Heeeeey whatsup bro');
+});
 
 router.post('/add', verify, async (req, res) => {
 	var data = req.body;
